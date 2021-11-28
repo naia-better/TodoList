@@ -13,9 +13,9 @@ module.exports = {
 	//开启代理服务器（方式二）
 	devServer: {
     proxy: {
-      '/atguigu': {
+      '/api': {
         target: 'http://localhost:5000',
-				pathRewrite:{'^/atguigu':''},
+				pathRewrite:{'^/api':''},
         // ws: true, //用于支持websocket
         // changeOrigin: true //用于控制请求头中的host值
       },
